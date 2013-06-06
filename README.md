@@ -1,6 +1,6 @@
 # node-objhash
 
-Retrieve a v8 object [identity hash](http://izs.me/v8-docs/classv8_1_1Object.html#a5309f7a349feb906a05ee45b6feeaab1).
+Retrieve a node.js object's v8 [identity hash](http://izs.me/v8-docs/classv8_1_1Object.html#a5309f7a349feb906a05ee45b6feeaab1).
 
 ## Usage
 
