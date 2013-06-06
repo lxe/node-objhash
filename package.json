@@ -1,0 +1,23 @@
+{
+  "name": "objhash",
+  "main": "objhash",
+  "version": "0.0.1",
+  "description": "Retrieve a node.js object's v8 identity hash.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lxe/node-objhash.git"
+  },
+  "author": {
+    "name": "Aleksey Smolenchuk",
+    "email": "lxe@lxe.co"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true
+}
