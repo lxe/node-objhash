@@ -18,8 +18,8 @@ Handle<Value> Ident(const Arguments& args) {
   return scope.Close(args[0]);
 }
 
-void Init(Handle<Object> exports, Handle<Object> module) {
-  module->Set(String::NewSymbol("exports"),
+void Init(Handle<Object> target) {
+  target->Set(String::NewSymbol("ident"),
       FunctionTemplate::New(Ident)->GetFunction());
 }
 
