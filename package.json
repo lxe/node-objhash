@@ -1,7 +1,7 @@
 {
   "name": "objhash",
   "main": "objhash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Retrieve a node.js object's V8 identity hash",
   "repository": {
     "type": "git",
