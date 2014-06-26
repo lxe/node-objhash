@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "objhash",
-      "sources": [ "objhash.cc" ]
+      "sources": [ "src/objhash.cc" ]
     }
   ]
 }
