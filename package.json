@@ -1,8 +1,8 @@
 {
   "name": "objhash",
   "main": "objhash",
-  "version": "0.0.2",
-  "description": "Retrieve a node.js object's v8 identity hash.",
+  "version": "1.0.0",
+  "description": "Retrieve a node.js object's V8 identity hash",
   "repository": {
     "type": "git",
     "url": "git://github.com/lxe/node-objhash.git"
@@ -14,10 +14,17 @@
   "engines": {
     "node": ">=0.8.0"
   },
-  "license": "MIT",
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://github.com/lxe/node-objhash/LICENSE"
+  }],
   "readmeFilename": "README.md",
   "scripts": {
-    "install": "node-gyp rebuild"
+    "install": "node-gyp rebuild",
+    "test": "npm build && mocha test"
   },
-  "gypfile": true
+  "gypfile": true,
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  }
 }
