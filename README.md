@@ -31,7 +31,7 @@ console.log(objhash(ref));
 // Note that this behavior differs if you use JSON.stringify()
 // as your memoize hasher
 console.log(objhash({ foo : 'bar' }));  
-> 248433069
+// > 248433069
 
 // For primitives, the function just returns the 
 // value of the argument
