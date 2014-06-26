@@ -1,5 +1,7 @@
 # node-objhash
 
+[![Build Status](https://travis-ci.org/lxe/node-objhash.svg)](https://travis-ci.org/lxe/node-objhash)
+
 Retrieve a node.js object's v8 [identity hash](http://izs.me/v8-docs/classv8_1_1Object.html#a5309f7a349feb906a05ee45b6feeaab1). 
 This value can be used as a hasher to a memoization function drastically improving performance. 
 
