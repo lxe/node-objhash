@@ -1,23 +1,20 @@
 #include <nan.h>
 
-using namespace v8;
-
-NAN_METHOD(Ident) {
-  NanScope();
-  if (args.Length() < 1) {
-    NanReturnUndefined();
-  } else if (args[0]->IsObject()) {
-    int hash = args[0]->ToObject()->GetIdentityHash();
-    NanReturnValue(NanNew<Number>(hash));
+void Method(const Nan::FunctionCallbackInfo<v8::Value>& info) {
+  if (info.Length() < 1) {
+    info.GetReturnValue().Set(Nan::Undefined());
+  } else if (info[0]->IsObject()) {
+    int hash = info[0]->ToObject()->GetIdentityHash();
+    info.GetReturnValue().Set(Nan::New(hash));
   } else {
-    NanReturnValue(args[0]);
+    info.GetReturnValue().Set(info[0]);
   }
 }
 
-void Init(Handle<Object> exports) {
+void Init(v8::Handle<v8::Object> exports) {
   exports->Set(
-    NanNew("ident"), 
-    NanNew<FunctionTemplate>(Ident)->GetFunction()
+    Nan::New("ident").ToLocalChecked(),
+    Nan::New<v8::FunctionTemplate>(Method)->GetFunction()
   );
 }
 
